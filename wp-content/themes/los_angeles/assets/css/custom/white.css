@@ -1,0 +1,14 @@
+
+#page ul#entries li .entry small a, 
+#page ul#entries li .entry p a, 
+#content ul.quick_links li a
+{color: #0090d3;}
+				
+ol#controls li.current a{
+		background:#0090d3 !important;
+		color:#0090d3 !important;
+		border: #0090d3;
+		opacity: 1;
+		}
+		
+a:hover{color: #0085c3;}

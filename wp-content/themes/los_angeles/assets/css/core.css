@@ -1,0 +1,836 @@
+/* --------------------------- */
+/* 			LosAngeles 		   */
+/* A template by Brandon Jones */
+/* --------------------------- */
+
+/* --------------------------- */
+/* Stylesheet Imports 		   */
+/* --------------------------- */
+@import url(import/reset.css);
+@import url(import/superfish.css);
+@import url(import/ceebox.css);
+
+
+/* --------------------------- */
+/* Core Styling 			   */
+/* --------------------------- */
+
+body{
+	font: 12px 'Georgia';
+	background: url(../img/global/bg.jpg) repeat-x;
+}
+
+/* --------------------------- */
+/* Container 				   */
+/* --------------------------- */
+
+#container{
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/* --------------------------- */
+/* Header 					   */
+/* --------------------------- */
+
+#header{
+	margin-top: 2px;
+	height: 178px;
+}
+
+	#header .logo{
+		text-align: center;
+		}
+	
+	#header .search{
+		float: right;
+		margin-top: 2px;
+	}
+	
+		#header .search input{
+			padding: 5px;
+			border: 1px solid #d9d9d9;
+			color: #999999;
+			font-style: italic;
+			font: 11px 'Georgia';
+			background: #FFF url(../img/global/search_icon.jpg) no-repeat right;
+			width: 177px;
+		}
+
+
+/* --------------------------- */
+/* Navigation & DROPDOWN HOVER STATES		   */
+/* --------------------------- */
+
+#navigation li.menu-item, #navigation li.home, #navigation span{
+	font-family: 'Arial';
+	font-size: 20px;
+	padding-top: 2px;
+	text-transform: uppercase;
+}
+
+.cufon-active #navigation li.menu-item, #navigation li.home, #navigation span{ 
+	font-size: 20px;
+	padding-top: 0px;
+	line-height: 20px;
+}
+
+.cufon-active #navigation li.menu-item li.menu-item, #navigation span{ 
+	font-size: 15px;
+	padding: 6px 0 0;
+	height: 23px;
+}
+
+#navigation span{color: white; font-size: 20px !important; margin-left: 16px;}
+#navigation .cat-item{color: white; font-size: 15px !important; text-transform: uppercase;}
+
+.cufon-active #navigation li.menu-item a:hover, .cat-item a:hover{ 
+	opacity: 0.7;
+}
+
+
+/* --------------------------- */
+/* Content 					   */
+/* --------------------------- */
+
+#content{
+	width: 1000px;
+	background: url(../img/global/content_bg.jpg) no-repeat;
+	margin-top: 5px;
+	min-height: 355px;
+	overflow: hidden;
+	padding-top: 18px;
+}
+
+#navigation{position: absolute; top: 152px; width: 998px;}
+
+
+/* --------------------------- */
+/* Cu3er					   */
+/* --------------------------- */
+
+#cu3er{
+	background: url(../img/global/shadow.jpg) no-repeat bottom left;
+	height: 374px;
+	padding-left: 20px;
+	width: 960px;
+	overflow: hidden;
+}
+
+/* --------------------------- */
+/* Quick Links				   */
+/* --------------------------- */
+
+#content ul.quick_links{
+	overflow: hidden;
+	margin-bottom: 30px;
+	width: 1000px;
+	padding-left:2px;
+}
+	#content ul.quick_links li{
+		width: 210px;
+		float: left;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
+	#content ul.quick_links li:last-child{
+		margin-right: 0;
+	}
+	
+	#content ul.quick_links li h3{
+		display: block;
+		font-size: 18px;
+		color: #181818;
+	}
+	
+	#content ul.quick_links li h3 img{
+		vertical-align: middle;
+	}
+	
+	#content ul.quick_links li p{
+		color: #666666;
+		font-size: 11px;
+		margin-top: 10px;
+		line-height: 18px;
+	}
+	
+
+	
+	#content ul.quick_links li a.more{
+		font-weight: bold;
+		display: block;
+	}
+
+/* --------------------------- */
+/* Twitter Bar				   */
+/* --------------------------- */
+
+#twitter_bar{
+	height: 50px;
+	border-top: 1px dotted #cacaca;
+	border-bottom: 1px dotted #cacaca;
+	background: #f3fcff url(../img/twitter/twitter_icon.png) no-repeat left;
+	background-position: 10px;
+	margin-bottom: 30px;
+}
+
+	#twitter_bar .textwidget, .twitter-item{
+		padding: 18px;
+		padding-left: 45px;
+		color: #222222;
+	}
+	
+	#twitter_bar a {
+		color: #008fd2;
+	}
+	
+	#twitter_bar .twitter-link{
+		font-style: italic;
+		padding-left: 6px;
+	}
+
+/* --------------------------- */
+/* Page				   	   	   */
+/* --------------------------- */
+
+#page{
+	width: 667px;
+	float: left;
+	padding-left: 18px;
+	overflow: hidden;
+}
+	#page .author h2,
+	#page #comments h2,
+	#page #reply h2{
+		font-family: 'Arial';
+		font-size: 16px;
+		font-weight: bold;
+		border-bottom: 1px dotted #cacaca;
+		padding-bottom: 10px;
+		margin-top: 5px;
+		text-transform: uppercase !important;
+	}
+
+	#page .title{
+		font-family: 'Arial';
+		font-size: 16px;
+		font-weight: bold;
+		border-bottom: 1px dotted #cacaca;
+		padding-bottom: 10px;
+		margin-top: 0px;
+		text-transform: uppercase !important;
+	}
+	
+		.cufon-active #page .title,
+		.cufon-active #page .author h2,
+		.cufon-active #page #comments h2,
+		.cufon-active #page #reply h2{ 
+			font-size: 22px;
+			padding-top: 0px;
+			text-transform: uppercase !important;
+		}
+		
+	#page ul#entries{
+		margin-top: 15px;
+		margin-bottom:-5px;
+	}
+		
+		/* List CSS */
+		#page ul#entries li{
+			border-bottom: 1px dotted #cacaca;
+			padding-bottom: 25px;
+			overflow: hidden;
+			margin-bottom: 25px;
+			width: 667px;
+		}
+	
+		#page ul#entries li .avatar {
+			float: left;
+			border: 1px solid #c8c8c8;
+			padding: 2px;
+			margin-right: 10px;
+		}
+		
+		#page .wp-post-image{
+			border: 1px solid #c8c8c8;
+			padding: 2px;
+		}
+		
+			#page ul#entries li img.border{
+				border: 1px solid #c8c8c8;
+				padding: 2px;
+			}
+		
+		#page ul#entries li .entry{
+			color: #666666;
+			font-size: 12px;
+			width: 445px;
+			float: right;
+		}
+		
+			#page ul#entries li .entry h2{
+				font-size: 25px;
+				font-family: Georgia;
+				font-style: italic;
+				color: #222222;
+				margin-top: -3px !important;
+			}
+			
+				.cufon-active #page ul#entries li .entry h2{ 
+					font-size: 26px;
+				}
+				
+			#page ul#entries li .entry h3{
+				font-size: 18px;
+				font-family: Georgia;
+				font-style: italic;
+				color: #222222;
+				margin: 20px 0 6px;
+			}
+			
+			.entry ul, .entry ol {list-style:circle !important; margin-left:20px;}
+			
+				.cufon-active #page ul#entries li .entry h3{ 
+					font-size: 18px;
+				}
+				
+			#page ul#entries li .entry h4{
+				font-size: 14px;
+				font-family: Georgia;
+				font-style: normal;
+				color: #222222;
+			}
+			
+			#page ul#entries li .entry h5{
+				font-size: 12px;
+				font-family: Georgia;
+				font-style: normal;
+				color: #222222;
+			}
+				
+			#page ul#entries li .entry small{
+				font-size: 11px;
+				margin-top: 15px;
+				margin-bottom: 15px;
+				display: block;
+			}
+			
+
+			
+			#page ul#entries li .entry p{
+				line-height: 18px;
+				margin-bottom: 10px;
+			}
+			
+				#page ul#entries li .entry p strong{
+					color: #222222;
+					font-weight: normal;
+				}
+				
+
+			
+			#page ul#entries li .entry hr{
+				height: 1px;
+				border-top: 1px dotted #b0b0b0;
+				margin-top: 15px;
+				margin-bottom: 15px;
+			}
+			
+			#page ul#entries li ul, #page{
+				margin-bottom: 10px;
+				margin-top: 10px;
+				list-style-type: disc !important;
+			} 
+				#page ul#entries li ul li{
+					border: 0px;
+					padding: 0;
+					margin-bottom: 5px;
+				}
+				
+			#page ul#entries li ol{
+				margin-bottom: 10px;
+				margin-top: 10px;
+			}
+				#page ul#entries li ol li{
+					border: 0px;
+					padding: 0;
+					margin-bottom: 5px;	
+				}
+				
+			#page ul#entries li blockquote{
+				margin-left: 30px;
+				color: #333333;
+			}
+			
+			#page ul#entries li .tags{
+				background: #000;
+				color: #FFF;
+				line-height: 18px;
+				padding:5px 5px 5px;
+			}
+			
+				#page ul#entries li .tags a{
+					color: #cccccc;
+				}
+		
+		/* Single CSS */
+		#page ul#entries li .entry.single{
+			float: none;
+			width: auto;
+		}
+		
+			#page ul#entries li .entry.single p{
+				line-height: 20px;
+			}
+			
+			#page ul#entries li .entry.single small{
+				margin-top: 0;
+			}
+		
+		#page .browse_entries a{
+			font-family: 'Arial';
+			font-size: 20px;
+			font-weight: bold;
+		}
+		
+		.cufon-active #page .browse_entries a{ 
+			font-size: 28px;
+		}
+		
+		#page .browse_entries a.p{
+			float: left;
+		}
+		
+		#page .browse_entries a.m{
+			float: right;
+		}
+		
+	
+	/* Author */
+	#page .author{
+		border-bottom: 1px dotted #cacaca;
+		overflow: hidden;
+		width: 667px;
+		padding: 0 0 30px;
+		margin-bottom: 15px;
+	}	
+	
+		#page .author h2{
+			border: 0;
+		}
+		
+		#page .author h3{
+			font-size: 15px;
+			font-family: Georgia;
+			font-style: italic;
+			color: #222222;
+		}
+			
+			.cufon-active #page .author h3{ 
+				font-size: 16px;
+				margin: -2px 0 4px;
+			}
+		
+		#page .author img{
+			border: 1px solid #cfcfcf;
+			float: left;
+			width: 78px;
+			height: 78px;
+		}
+		
+		#page .author .info{
+			float: right;
+			width: 570px;
+			line-height: 21px;
+			color: #666666;
+		}
+		
+		#page .quote{font-style: italic; line-height: 24px;}
+		
+	/* Comments */
+	#page #comments{
+		border-bottom: 1px dotted #cacaca;
+		padding-bottom: 10px;
+		margin-bottom: 15px;
+	}
+		#page #comments h2{
+			border: 0px;
+		}
+		
+		#page #comments #comment-list li{
+			width: 667px;
+			overflow: hidden;
+			margin-bottom: 10px;
+		}
+	
+			#page #comments #comment-list li .avatar{
+				float: left;
+				width: 78px;
+				text-align: right;
+				margin-bottom:5px;
+			}
+				#page #comments #comment-list li .avatar img{
+					border: 1px solid #cfcfcf;
+				}
+				
+				#page #comments #comment-list li .avatar a{
+					color: #1fa3da;
+				}
+				#page #comments #comment-list li .avatar small{
+					color: #727272;
+				}
+				
+			#page #comments #comment-list li .comment{
+				float: right;
+				width: 530px;
+				background: #f8f8f8;
+				border: 1px solid #cfcfcf;
+				padding: 15px;
+				color: #666666;
+				font-family: Arial;
+			}
+			
+				#page #comments #comment-list li .comment p{
+					line-height: 18px;
+				}
+				
+	/* Reply */
+	#page .wpcf7{
+	
+	}
+	
+		#page #reply h2{
+			border: 0;
+		}
+		
+		#page #reply img{
+			float: left;
+			width: 78px;
+			border: 1px solid #cfcfcf;
+			margin-top: 10px;
+		}
+		
+		#page #reply form{
+			float: right;
+			width: 560px;
+		}
+		
+		#page #reply form input,
+		#page #reply form textarea{
+			display: block;
+			background: #f8f8f8;
+			border: 1px solid #cfcfcf;
+			padding: 15px;
+			width: 500px;
+			margin: 10px 0 10px;
+		}
+		
+		#page .wpcf7 form input,
+		#page .wpcf7 form textarea{
+			display: block;
+			background: #f8f8f8;
+			border: 1px solid #cfcfcf;
+			padding: 15px;
+			width: auto;
+			margin: 10px 0 10px;
+		}
+		
+		#page .wpcf7 form input{
+			width: auto;
+		}
+		
+		#page .wpcf7 form textarea{
+			width: 500px;
+		}
+		
+		
+		
+		#page #reply form textarea,
+		#page .wpcf7 form textarea{
+			height: 100px;
+			font: 12px 'Arial';
+		}
+		
+		#page #reply form .button,
+		#page .wpcf7 form .button, #page form .button{
+			background: #000;
+			color: #FFF;
+			padding: 13px;
+			border:1px solid #cfcfcf;
+			width: auto;
+		}
+		
+		/* Contact */
+		#page .wpcf7{
+			margin-top: 10px;
+		}
+		
+			#page ul#entries li .entry #contact h2{
+				font-size: 18px;
+				font-family: Georgia;
+				font-style: italic;
+				color: #222222;
+			}
+				
+				.cufon-active #page ul#entries li .entry #contact h2{ 
+				    font-size: 18px;
+				}
+				
+		/* Gallery */
+		ul.gallery{
+			margin: 0px 0 20px !important;
+			width: 670px;
+		}
+			ul.gallery li img{
+				float: left;
+				width: 106px;
+				margin-right: 10px;
+				margin-left: 10px;
+				margin-top: 6px;
+				margin-bottom: 6px;
+			}
+			
+		
+			ul.gallery li img{
+				border: 1px solid #cfcfcf;
+				padding: 2px;
+			}
+			
+		#page #entries h2{margin: 10px 0 4px;}	
+		#page h4{font-size: 15px; margin: 10px 0 4px; text-transform: uppercase;}	
+		#page h5{font-size: 14px; margin: 10px 0 4px;}	
+		#page h6{font-size: 13px; margin: 10px 0 4px;}	
+/* --------------------------- */
+/* Sidebar				   	   */
+/* --------------------------- */
+
+#sidebar{
+	width: 265px;
+	float: right;
+	padding-right: 18px;
+	color:#666666;
+	font-size:11px;
+	line-height:18px;
+}
+
+	#sidebar .box{
+		border-bottom: 1px dotted #cacaca;
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+	}
+	
+		#sidebar .box.noborder{
+			border: 0;
+		}
+
+		#sidebar .box .title{
+			font-family: 'Arial';
+			font-size: 16px;
+			font-weight: bold;
+			padding-bottom: 10px;
+			margin-top: 5px;
+			text-transform: uppercase !important;
+			color: #222;
+		}
+		
+			.cufon-active #sidebar .box .title{ 
+				font-size: 22px;
+				padding-top: 0px;
+			}
+	
+	#sidebar ul.ads{
+	
+	}
+		
+		#sidebar ul.ads li{
+			display: inline;
+		}
+		
+	#sidebar .author img{
+		float: left;
+		margin: 5px;
+		margin-left: 0;
+	}
+	
+		#sidebar .author p{
+			font-size: 11px;
+			line-height: 18px;
+			color: #666666;
+		}
+		
+	#sidebar ul.categories{
+		font-size: 11px;
+	}
+		#sidebar ul.categories li{
+			margin-bottom: 8px;
+		}
+		
+		#sidebar ul.categories li a{
+			color: #aaaaaa;
+		}
+		
+		
+
+/* --------------------------- */
+/* Footer				   	   */
+/* --------------------------- */
+		
+#footer{
+	background: #191919;
+	height: 200px;
+	padding: 8px;
+	margin-top: 15px;
+}
+
+	#footer .inner{
+		width: 1000px;
+		margin: 0 auto;
+	}
+	
+	#footer ul.ads{
+		margin-top: 35px;
+	}
+	
+		#footer ul.ads li{
+			display: inline;
+			margin-right: 20px;
+		}
+		
+		#footer ul.ads li:last-child{
+			margin-right: 0px;
+		}
+		
+		#footer ul.ads li img{
+			border: 1px solid #4d4d4d;
+		}
+	
+	#footer .copyright{
+		margin-top: 20px;
+		width: 480px;
+		float: left;
+	}
+	
+		#footer .copyright p{
+			color: #666666;
+			font-size: 11px;
+		}
+		
+		#footer .copyright p img{
+			vertical-align: middle;
+		}
+	
+	#footer ul.quick_links{
+		float: right;
+		width: 480px;
+		text-align: right;
+		margin-top: 32px;
+	}
+	
+		#footer ul.quick_links li{
+			display: inline;
+			color: #666666;
+			font-size: 11px;
+			margin-right: 10px;
+			float: left;
+		}
+		
+		#footer ul.quick_links ul{
+			float: left;
+		}
+		
+		#footer ul.quick_links li a{
+			color: #666666;
+		}
+		
+/* Easy Slider */
+#slider {width: 960px; margin-left: 18px; background: url(../img/global/shadow.jpg) no-repeat bottom left; height: 374px;}
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		list-style:none;
+		width: 960px;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:960px;
+		height:374px;
+		overflow:hidden; 
+		background: transparent;
+		}	
+	/* numeric controls */	
+
+	ol#controls{
+		margin: -50px 18px 0;
+		padding:0;
+		height:28px;
+		}
+	ol#controls li{
+		margin:0 10px 0 0; 
+		padding:0;
+		float:left !important;
+		list-style:none;
+		height:10px !important;
+		line-height:10px !important;
+		}
+	ol#controls li a{
+		float:left !important;
+		height:10px !important;
+		width:10px !important;
+		line-height:10px !important;
+		border:1px solid #ccc !important;
+		background:#efefef !important;
+		color:#efefef !important;
+		padding:0 !important;
+		text-decoration:none;
+		font-size: 1px;
+		display: block;
+		opacity: 0.8;
+		}
+
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+
+/* // Full Width */
+.full {width: 960px !important;
+	float: left;
+	padding-left: 18px;
+	overflow: hidden;}		
+.full li {width: 960px !important;}	
+.full .author{width: 960px !important;}
+.full .author .info {width:865px !important;}	
+
+
+
+/* --------------------------- */
+/* Various Version 1.3 Updates */
+/* --------------------------- */
+
+
+.entry li {
+				margin-bottom: 10px;
+				margin-top: 0px;
+				list-style: disc !important;
+				display: list-item !important;
+				overflow: visible !important; 
+			} 
+			
+.entry ol li {	list-style: decimal !important;	} 
+			
+.alignleft{float: left; margin-right: 12px;}
+.alignright{float: right; margin-left: 12px;}
+.p{float: right;}
+.m{float: left;}
+
+select{padding: 5px;}
+
+dt {margin-bottom:4px;}
+dl {margin:0 1.5em;}
+dd {margin-bottom:12px;}
+
+			
+			

@@ -1,0 +1,39 @@
+.box ul.ads li{
+	display: inline;
+}
+
+#header .search form input{
+	padding-top: 3px;
+}
+
+ul.pnr li{
+	margin-right: 4px;
+	text-align: center;
+}
+
+.box ul.follow_us li{
+			display: inline;
+}
+
+#sidebar .title{
+		width: 100%;
+}
+
+ul.latest_news li,
+ul.featured_posts li{
+		clear: both;
+}
+
+		#entry-list .entry .post .tags{
+			padding-bottom: 10px;
+		}
+		#entry-list .entry .post .tags p{
+			color: #cccccc;
+			font-size: 12px;
+			padding: 0px;
+			padding-left: 5px;
+		}
+
+
+/* IE Dropdown menu fix */
+.cufon:hover, .menu-item, .cat-item{color: white !important; visibility: visible !important;}

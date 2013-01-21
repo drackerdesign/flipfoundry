@@ -1,0 +1,16 @@
+#gallery .karmic_flow_slides ul li img{
+	border: 1px solid #b9b9b9;
+	padding: 2px;
+}
+
+#gallery{overflow: visisble !important; width: 960px !important;}
+
+#gallery .karmic_flow_slides ul li{
+	margin-right: 29px;
+	margin-bottom: 25px;
+}
+
+
+
+
+

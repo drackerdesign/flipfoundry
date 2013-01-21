@@ -1,0 +1,102 @@
+/*  QUICK-STYLES STYLESHEET  */
+#content a,
+#entry-list .entry .entry_details,
+ul.latest_news li div p .more,
+ul.featured_posts li div p .more,
+#sidebar .box a {color:#bc0000;}
+	
+#content h2 a{color: #252524 !important;}
+
+body{
+	background: #880000 url(../red/img/bg.jpg) repeat-x;
+}
+
+#header .search input{
+	border: 1px solid #333333;
+	color: #999999;
+}
+
+#content{
+	width: 1025px;
+	background: transparent url(../red/img/content_bg.png) repeat-y;
+	padding-bottom: 15px;
+	padding-left: 5px;
+}
+
+#content ul.quick_links{
+	width: 1025px;
+	padding-left: 30px;
+}
+
+#cu3er{
+	background-image: url(../red/img/cu3er_bg.jpg);
+	margin-left: 8px;
+}
+
+#page .title,
+#page .author h2,
+#page #comments h2,
+#page #reply h2,
+#page ul#entries li .entry h2,
+#page ul#entries li .entry h3,
+#page ul#entries li .entry h4,
+#page ul#entries li .entry h5,
+#page ul#entries li .entry h2 a,
+#content ul.quick_links li h3,
+#sidebar .box .title,
+#page ul#entries li .entry #contact h2{
+    color: #252524;
+}
+
+#footer{
+	background: #191919 none repeat scroll 0 0;
+}
+
+
+
+
+#page .title,
+#page .author h2,
+#page #comments h2,
+#page #reply h2,
+#page ul#entries li,
+#sidebar .box,
+#page .author,
+#page #comments,
+#twitter_bar{
+    border-bottom: 1px dotted #b7b7b5;
+}
+
+#twitter_bar{
+    border-top: 1px dotted #b7b7b5;
+}
+	
+
+#twitter_bar{background: transparent url(img/twitter_32.png) no-repeat scroll 10px 50% !important; margin-left:19px; width:978px;}
+#twitter_bar .textwidget, .twitter-item{color: #666 !important; padding:18px 18px 18px 52px !important;}
+#footer{margin-top: 0px !important;}
+	
+	
+#page ul#entries li p,
+#content ul.quick_links li p,
+#page ul#entries li blockquote{
+	color: #666666;
+}
+
+#page ul#entries li .entry small{
+	color: #bc0000;
+}
+
+#page ul#entries li img.border{
+	border: 1px solid #c8c8c8;
+}
+
+.sf-menu li li,
+.sf-menu li li li{
+	background: #191919;
+}
+
+#footer ul.quick_links li,
+#footer ul.quick_links li a{
+	color: #FFF;
+}
